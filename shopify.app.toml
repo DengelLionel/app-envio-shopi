@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "creatiendafy"
+client_id = "9d5b8c8dd74201605631e2fce65e41e5"
+application_url = "https://genes-rules-crossword-knitting.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://genes-rules-crossword-knitting.trycloudflare.com/auth/callback",
+  "https://genes-rules-crossword-knitting.trycloudflare.com/auth/shopify/callback",
+  "https://genes-rules-crossword-knitting.trycloudflare.com/api/auth/callback",
+  "https://genes-rules-crossword-knitting.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "ropalimaperu.myshopify.com"
