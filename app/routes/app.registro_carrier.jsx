@@ -21,7 +21,7 @@ Asigna un nombre a la zona y especifica qué códigos postales están incluidos.
 <Button>CREAR ZONA</Button>
 
         </Form>
-        <Form action="/setup-carrier-service" method="post">
+        <Form action="/app/setup-carrier-service" method="post">
                 <button type="submit" name="action" value="create">Crear Carrier Service</button>
             </Form>
              </Grid.Cell>
