@@ -15,14 +15,9 @@ Asigna un nombre a la zona y especifica qué códigos postales están incluidos.
           </LegacyCard>
          </Grid.Cell>
         <Grid.Cell columnSpan={{xs: 6, sm: 3, md: 3, lg: 6, xl: 6}}>
-        <Form>
-<TextField label="Nombre de la zona"/>
-<TextField label="Código postal o distrito"/>
-<Button>CREAR ZONA</Button>
-
-        </Form>
+      
         <Form action="/app/setup-carrier-service" method="post">
-                <button type="submit" name="action" value="create">Crear Carrier Service</button>
+                <Button submit={true} >Crear Carrier Service</Button>
             </Form>
             <CarrierServicesList/>
              </Grid.Cell>

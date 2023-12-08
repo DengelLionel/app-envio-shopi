@@ -1,4 +1,4 @@
-
+import {authenticate} from '../shopify.server'
 export const action = async ({request}) => {
     const { admin, session } = await authenticate.admin(request);
 const carrier_service = new admin.rest.resources.CarrierService({session: session});
