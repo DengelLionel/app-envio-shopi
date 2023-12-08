@@ -1,6 +1,6 @@
 import React from 'react'
 import {Button,TextField,Form,Page,Grid,LegacyCard} from "@shopify/polaris"
-
+import CarrierServicesList from './app.allcarrierservice'
 
 const Registro_carrier = () => {
 
@@ -24,6 +24,7 @@ Asigna un nombre a la zona y especifica qué códigos postales están incluidos.
         <Form action="/app/setup-carrier-service" method="post">
                 <button type="submit" name="action" value="create">Crear Carrier Service</button>
             </Form>
+            <CarrierServicesList/>
              </Grid.Cell>
         
         </Grid>
